@@ -10,7 +10,7 @@ import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/** Получение ответов ИИ */
 public class ChatGPTService {
     private ChatGPT chatGPT;
 

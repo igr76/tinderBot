@@ -28,7 +28,7 @@ import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-
+/** Обслуживание телеграмм бота */
 public class MultiSessionTelegramBot extends TelegramLongPollingBot {
 
     private String name;
