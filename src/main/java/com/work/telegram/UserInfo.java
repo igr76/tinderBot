@@ -1,5 +1,5 @@
 package com.work.telegram;
-
+/** информация о человеке */
 public class UserInfo {
     public String name; //Имя
     public String sex; //Пол
