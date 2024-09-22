@@ -108,6 +108,7 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
             list.add(message);
             return;
         }
+
         //command profile
         if (message.equals("/profile")) {
             currentMode= DialogMode.PROFILE;
@@ -169,13 +170,14 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
                     sendTextMessage("Цель знакомства?");
                     return;
                 case 5:me.goals=message;
-            String aboutFriend= message;
-            String promt = loadPrompt("opener");
-                Message msg = sendTextMessage("Подождите chatGPT думает");
-                String answer = chatGPTService.sendMessage(promt,aboutFriend);
-                updateTextMessage(msg,answer);
+                 String aboutFriend= message;
+                 String promt = loadPrompt("opener");
+                 Message msg = sendTextMessage("Подождите chatGPT думает");
+                 String answer = chatGPTService.sendMessage(promt,aboutFriend);
+                 updateTextMessage(msg,answer);
 
-            return;}
+
+            }
         }
 
 
