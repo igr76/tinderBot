@@ -15,8 +15,7 @@ public class UserInfo {
     private String fieldToString(String str, String description) {
         if (str != null && !str.isEmpty())
             return description + ": " + str + "\n";
-        else
-            return "";
+        else  return "";
     }
 
     @Override
