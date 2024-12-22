@@ -72,11 +72,9 @@ public class MultiSessionTelegramBot extends TelegramLongPollingBot {
         if (updateEvent.get().hasMessage()) {
             return updateEvent.get().getMessage().getFrom().getId();
         }
-
         if (updateEvent.get().hasCallbackQuery()) {
             return updateEvent.get().getCallbackQuery().getFrom().getId();
         }
-
         return null;
     }
 
@@ -86,11 +84,9 @@ public class MultiSessionTelegramBot extends TelegramLongPollingBot {
     public String getMessageText() {
         return updateEvent.get().hasMessage() ? updateEvent.get().getMessage().getText() : "";
     }
-
     public  boolean isMessageCommand() {
         return updateEvent.get().hasMessage() && updateEvent.get().getMessage().isCommand();
     }
-
 
     /**
      * Метод возвращает код нажатой кнопки (buttonKey).
